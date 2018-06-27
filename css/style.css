@@ -1,0 +1,240 @@
+body {
+	display: flex;
+	justify-content: center;
+	background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.6)), url(https://i0.wp.com/wallur.com/wp-content/uploads/2016/12/pokemon-1-background-6.jpg?w=1920);	
+	background-repeat: no-repeat;
+	background-size: 1800px 900px;
+}
+
+.case {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	background-color: #dedede;
+	height: 570px;
+	width: 355px;
+	margin: 50px;
+	border: 3px outset #76747e;
+	border-radius: 20px;
+	box-shadow: 10px 10px 30px #76747e;
+}
+
+header {
+	height: 110px;
+	width: 300px;
+	background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	align-self: center;
+	margin: 8px;
+}
+
+#module {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	height: 420px;
+	width: 400px;
+	margin: 4px;
+}
+
+.home {
+	display: flex;
+	border: 8px inset #76747e;
+	height: 190px;
+	width: 200px;
+	justify-content: center;
+	align-items: center;
+	background-image: url(https://orig00.deviantart.net/a88f/f/2014/325/6/6/or_as_battle_background_1b_by_phoenixoflight92-d874gjl.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 6px;
+	opacity: 0.90;
+}
+
+.game-module {
+	font-family: sans-serif;
+	font-size: 11px;
+	justify-content: center;
+}
+
+button {
+	margin: 4px;
+	width: 100px;
+	height: 20px;
+	font-family: sans-serif;
+	border-radius: 6px;
+	font-size: 11px;
+	background-color: #3a3a3c;
+	color: #f2f3f5;
+	padding: 3px;
+}
+
+.interactions {
+	margin-bottom: 4px;
+}
+
+.animation1 {
+	background-image: url(https://www.serebii.net/diamondpearl/pokemon/025-m.png);
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+}
+
+.animation2 {
+	background-image: url(https://www.serebii.net/heartgoldsoulsilver/pokemon/025-m.png);
+	background-repeat: no-repeat;
+	height: 100px;
+	width: 100px;
+}
+
+h5 {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	font-family: sans-serif;
+	margin: 4px;
+	font-size: 12px;
+}
+.written-instructions {
+	margin: -60px;
+	font-family: sans-serif;
+	font-size: 12px;
+	align-self: center;
+	align-items: center;
+	font-weight: 600;
+	background-color: #f2f3f5;
+	border-radius: 4px;
+	list-style-type: none;
+	padding: 6px;
+	width: 250px;
+}
+
+.rule {
+	font-weight: 400;
+	font-size: 10px;
+	position: relative;
+	right: -14px;
+}
+
+.grass1 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/001.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.grass2 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/dp/001.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.water1 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/007.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.water2 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/dp/007.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.fire1 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/004.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.fire2 {
+	background-image: url(https://www.serebii.net/pokearth/sprites/dp/004.png);
+	background-repeat: no-repeat;
+	height: 75px;
+	width: 75px;
+	border: 2px solid #bebbbb;
+	background-color: #f2f3f5;
+	margin: 2px;
+	border-radius: 5px;
+}
+
+.status {
+	display: flex;
+	width: 300px;
+	height: 140px;
+	font-family: sans-serif;
+	justify-content: space-around;
+	align-self: center;
+	border-radius: 6px;
+	padding: 6px;
+	margin-top: 14px;
+}
+
+.label-column {
+	width: 100px;
+	height: 100px;
+	font-weight: 550;
+}
+
+.label-column div, .stat-column div{
+	margin: 8px;
+}
+
+.hunger-stat, .energy-stat, .happiness-stat {
+	height: 14px;
+	width: 102px;
+	background-color: #e9ebee;
+	border-color: #bebbbb;
+	border-radius: 2px;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.hungerbar, .energybar, .happinessbar {
+	display: flex;
+	order: -1;
+	height: 12px;
+	width: 100px;
+	position: relative;
+	top: -7px;
+	right: 7px;
+}
+
+.hungerbar {
+	background-color: #e33525;
+}
+
+.energybar {
+	background-color: #2878e8;
+}
+
+.happinessbar {
+	background-color: #f8d548;
+}
