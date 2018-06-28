@@ -1,240 +1,503 @@
 body {
-	display: flex;
-	justify-content: center;
-	background: linear-gradient(rgba(255,255,255,0.4), rgba(255,255,255,0.6)), url(https://i0.wp.com/wallur.com/wp-content/uploads/2016/12/pokemon-1-background-6.jpg?w=1920);	
-	background-repeat: no-repeat;
-	background-size: 1800px 900px;
-}
-
-.case {
-	display: flex;
-	flex-direction: column;
-	align-self: center;
-	background-color: #dedede;
-	height: 570px;
-	width: 355px;
-	margin: 50px;
-	border: 3px outset #76747e;
-	border-radius: 20px;
-	box-shadow: 10px 10px 30px #76747e;
+  background-image: url("../img/pikachu_background.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+  color: #4b6969;
 }
 
 header {
-	height: 110px;
-	width: 300px;
-	background-image: url(https://upload.wikimedia.org/wikipedia/commons/9/98/International_Pok%C3%A9mon_logo.svg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	align-self: center;
-	margin: 8px;
-}
-
-#module {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	align-self: center;
-	align-content: center;
-	height: 420px;
-	width: 400px;
-	margin: 4px;
-}
-
-.home {
-	display: flex;
-	border: 8px inset #76747e;
-	height: 190px;
-	width: 200px;
-	justify-content: center;
-	align-items: center;
-	background-image: url(https://orig00.deviantart.net/a88f/f/2014/325/6/6/or_as_battle_background_1b_by_phoenixoflight92-d874gjl.png);
-	background-repeat: no-repeat;
-	background-size: cover;
-	margin: 6px;
-	opacity: 0.90;
-}
-
-.game-module {
-	font-family: sans-serif;
-	font-size: 11px;
-	justify-content: center;
-}
-
-button {
-	margin: 4px;
-	width: 100px;
-	height: 20px;
-	font-family: sans-serif;
-	border-radius: 6px;
-	font-size: 11px;
-	background-color: #3a3a3c;
-	color: #f2f3f5;
-	padding: 3px;
-}
-
-.interactions {
-	margin-bottom: 4px;
-}
-
-.animation1 {
-	background-image: url(https://www.serebii.net/diamondpearl/pokemon/025-m.png);
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
-}
-
-.animation2 {
-	background-image: url(https://www.serebii.net/heartgoldsoulsilver/pokemon/025-m.png);
-	background-repeat: no-repeat;
-	height: 100px;
-	width: 100px;
+  height: 150px;
+  width: 400px;
+  background-image: url("../img/pokemon_logo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin: 10px;
 }
 
 h5 {
-	display: flex;
-	align-self: center;
-	justify-content: center;
-	font-family: sans-serif;
-	margin: 4px;
-	font-size: 12px;
-}
-.written-instructions {
-	margin: -60px;
-	font-family: sans-serif;
-	font-size: 12px;
-	align-self: center;
-	align-items: center;
-	font-weight: 600;
-	background-color: #f2f3f5;
-	border-radius: 4px;
-	list-style-type: none;
-	padding: 6px;
-	width: 250px;
+  margin: 5px;
 }
 
-.rule {
-	font-weight: 400;
-	font-size: 10px;
-	position: relative;
-	right: -14px;
+button {
+  font: sans-serif;
+  height: 20px;
 }
 
-.grass1 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/001.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+#game {
+  height: 600px;
+  width: 1000px;
+  display: flex;
+  align-self: center;
+  justify-content: center;
 }
 
-.grass2 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/dp/001.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+.side-displays {
+  height: 600px;
+  width: 250px;
+  background-color: rgba(255, 255, 255, 0.75);
+  border-radius: 10px;
 }
 
-.water1 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/007.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+.windows {
+  background-color: #4d4d4d;
+  border: 2px solid #e3e3e3;
+  border-radius: 8px;
+  padding: 4px;
+  color: #f0f0f0;
+  opacity: 0.95;
+  display: flex;
+  margin: 10px;
 }
 
-.water2 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/dp/007.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+#menu-display {
+  display: flex;
+  justify-content: center;
 }
 
-.fire1 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/hgss/004.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+#status-window {
+  height: 200px;
+  width: 220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-.fire2 {
-	background-image: url(https://www.serebii.net/pokearth/sprites/dp/004.png);
-	background-repeat: no-repeat;
-	height: 75px;
-	width: 75px;
-	border: 2px solid #bebbbb;
-	background-color: #f2f3f5;
-	margin: 2px;
-	border-radius: 5px;
+#status-title {
+  height: 40px;
+  width: 226px;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #c1bebd;
+  align-self: center;
+  align-items: center;
+  margin: 5px;
 }
 
-.status {
-	display: flex;
-	width: 300px;
-	height: 140px;
-	font-family: sans-serif;
-	justify-content: space-around;
-	align-self: center;
-	border-radius: 6px;
-	padding: 6px;
-	margin-top: 14px;
+#status-data {
+  height: 140px;
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
-.label-column {
-	width: 100px;
-	height: 100px;
-	font-weight: 550;
+#status-label-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
 }
 
-.label-column div, .stat-column div{
-	margin: 8px;
+#status-value-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
 }
 
-.hunger-stat, .energy-stat, .happiness-stat {
-	height: 14px;
-	width: 102px;
-	background-color: #e9ebee;
-	border-color: #bebbbb;
-	border-radius: 2px;
-	border-style: solid;
-	border-width: 2px;
+.max-bar {
+  height: 14px;
+  width: 100px;
+  background-color: #e9ebee;
+  border-color: #bebbbb;
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 2px;
+  display: flex;
+  align-items: center;
 }
 
-.hungerbar, .energybar, .happinessbar {
-	display: flex;
-	order: -1;
-	height: 12px;
-	width: 100px;
-	position: relative;
-	top: -7px;
-	right: 7px;
+.statbar {
+  height: 12px;
+  width: 100%;
+  border-radius: 2px;
 }
 
-.hungerbar {
-	background-color: #e33525;
+#hunger-statbar {
+  background-color: #e33525;
 }
 
-.energybar {
-	background-color: #2878e8;
+#energy-statbar {
+  background-color: #2878e8;
 }
 
-.happinessbar {
-	background-color: #f8d548;
+#happiness-statbar {
+  background-color: #f8d548;
+}
+
+#case {
+  height: 600px;
+  width: 400px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  flex-direction: column;
+  border-width: 2px;
+  border-color: #e3e3e3;
+  border-style: solid;
+  border-radius: 15px 15px 60px 15px;
+  box-shadow: 10px 10px 30px #000000;
+}
+
+#screen {
+  height: 280px;
+  width: 320px;
+  background-color: #828282;
+  margin-top: 30px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px 10px 40px 10px;
+  border-width: 1px;
+  border-color: #f0f0f0;
+  border-style: inset;
+}
+
+#display {
+  height: 200px;
+  width: 200px;
+  background-color: #c2b572;
+  margin-top: -20px;
+  border-width: 4px;
+  border-color: #828282;
+  border-style: inset;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#start-screen {
+
+}
+
+.home {
+  background-image: url("../img/home_background.png");
+  background-size: cover;
+  opacity: 0.75;
+}
+
+#pet-sprite {
+  height: 100px;
+  width: 100px;
+}
+
+.pikachu-animation-1 {
+  background-image: url("../img/pikachu_motion1.png");
+  background-repeat: no-repeat;
+}
+
+.pikachu-animation-2 {
+  background-image: url("../img/pikachu_motion2.png");
+  background-repeat: no-repeat;
+}
+
+#pet-food {
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/pet_food.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  margin-top: 80px;
+}
+
+#action-buttons {
+  height: 200px;
+  width: 400px;
+  display: flex;
+  align-self: center;
+}
+
+#directional-pad-buttons {
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+}
+
+#directional-pad-cross-button {
+  height: 110px;
+  width: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e3e3e3;
+  border-radius: 60px;
+  position: relative;
+  top: 40px;
+  right: -35px;
+}
+
+.directional-pad-cross-segment {
+  background-color: #4d4d4d;
+  border-radius: 5px;
+}
+
+#up-down-buttons {
+  height: 87px;
+  width: 28px;
+  position: relative;
+  top: 0px;
+  right: -42px;
+}
+
+#left-right-buttons {
+  height: 26px;
+  width: 90px;
+  position: relative;
+  top: 0px;
+  right: 12px;
+}
+
+.directional-pad-buttons {
+  height: 30px;
+  width: 30px;
+}
+
+#up-button {
+  position: relative;
+  top: 0px;
+  right: 1px;
+}
+
+#right-button {
+  position: relative;
+  top: -2px;
+  right: -52px;
+}
+
+#down-button {
+  position: relative;
+  top: 27px;
+  right: 1px;
+}
+
+#left-button {
+  position: relative;
+  top: -32px;
+  right: 1px;
+}
+#confirmation-buttons {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  margin-left: 40px;
+}
+.confirmation-buttons {
+  height: 55px;
+  width: 55px;
+  background-color: #a44a7a;
+  border-radius: 55px;
+  align-self: center;
+  margin: 5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #e3e3e3;
+  font-size: 28px;
+  font-weight: 500;
+  color: #66364e;
+  text-align: center;
+  line-height: 55px;
+}
+
+#b-button {
+  margin-top: 40px;
+}
+
+#a-button {
+  margin-top: -40px;
+}
+
+#menu-buttons {
+  height: 90px;
+  width: 400px;
+  display: flex;
+  justify-content: center;
+}
+
+.menu-buttons {
+  height: 10px;
+  width: 50px;
+  background-color: #4d4d4d;
+  border-radius: 25px;
+  margin: 15px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: #e3e3e3;
+  font-size: 10px;
+  color: #828282;
+  text-align: center;
+  line-height: 45px;
+}
+
+#select-button {
+
+}
+
+#start-button {
+
+}
+
+#notification-display {
+
+}
+
+#pet-name-notification-window {
+  height: 90px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#pet-name-notification-form {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#game-title {
+  height: 40px;
+  width: 226px;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #c1bebd;
+  align-self: center;
+  align-items: center;
+  margin: 2px;
+}
+
+#game-window {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.game-options {
+  display: flex;
+  flex-direction: row;
+  font-weight: 400;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.game-sprites {
+  height: 65px;
+  width: 65px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  border: 2px solid #c1bebd;
+  justify-content: center;
+  align-items: center;
+}
+
+#grass-sprite {
+
+}
+
+.grass-animation-1 {
+  background-image: url("../img/bulbasaur_motion1.png");
+}
+
+.grass-animation-2 {
+  background-image: url("../img/bulbasaur_motion2.png");
+}
+
+#water-sprite {
+
+}
+
+.water-animation-1 {
+  background-image: url("../img/squirtle_motion1.png");
+}
+
+.water-animation-2 {
+  background-image: url("../img/squirtle_motion2.png");
+}
+
+#fire-sprite {
+
+}
+
+.fire-animation-1 {
+  background-image: url("../img/charmander_motion1.png");
+}
+
+.fire-animation-2 {
+  background-image: url("../img/charmander_motion2.png");
+}
+
+#game-results-window {
+  height: 390px;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+#results-title {
+  height: 40px;
+  width: 226px;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  border-width: 2px 0px;
+  border-style: solid;
+  border-color: #c1bebd;
+  align-self: center;
+  align-items: center;
+  margin: 2px;
+}
+
+.choices {
+  display: flex;
+  flex-direction: column;
+}
+
+#user-choice {
+  display: flex;
+  font-weight: 400;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#pet-choice {
+  display: flex;
+  font-weight: 400;
+  margin: 5px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#faint-window {
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.transparent {
+  opacity: 0;
+}
+
+.dark-background {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,8)), url("../img/home_background.png");
+  background-size: cover;
+}
+
+.fade {
+  opacity: 0.60;
 }

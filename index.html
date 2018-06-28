@@ -6,20 +6,127 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
 </head>
 <body>
-	<div class="case">
-		<header></header>
-		<div id="module">
-			<div class="home">
+	<header></header>
+	<div id="game">
+		<div id="menu-display" class="side-displays">
+			<div id="status-window" class="windows">
+				<h3 id="status-title">Status</h3>
+				<div id="status-data">
+					<div id="status-label-column">
+						<div id="name-label" class="label">Name</div>
+						<div id="age-label" class="label">Age</div>
+						<div id="hunger-label" class="label">Hunger</div>
+						<div id="energy-label" class="label">Energy</div>
+						<div id="happiness-label" class="label">Happiness</div>
+					</div>
+					<div id="status-value-column">
+						<div id="name-value" class="value"></div>
+						<div id="age-value" class="value"></div>
+						<div id="hunger-value" class="value max-bar">
+							<div id="hunger-statbar" class="statbar">
+							</div>
+						</div>
+						<div id="energy-value" class="value max-bar">
+							<div id="energy-statbar" class="statbar">
+							</div>
+						</div>
+						<div id="happiness-value" class="value max-bar">
+							<div id="happiness-statbar" class="statbar">
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-			<button class="create">Create Pet</button>
-			<div class="interactions">
+		</div>
+		<div id="case">
+			<div id="screen">
+				<div id="display">
+					<h5 id="start-screen">--- PRESS START ---</h5>
+					<div id="pet-sprite">
+					</div>
+					<div id="pet-food">
+					</div>
+				</div>
 			</div>
-			<div class="status">
+			<div id="action-buttons">
+				<div id="directional-pad-buttons">
+					<div id="directional-pad-cross-button">
+						<div id="up-down-buttons" class="directional-pad-cross-segment">
+							<div id="up-button" class="directional-pad-buttons">
+							</div>
+							<div id="down-button" class="directional-pad-buttons">
+							</div>
+						</div>
+						<div id="left-right-buttons" class="directional-pad-cross-segment">
+							<div id="right-button" class="directional-pad-buttons">
+							</div>
+							<div id="left-button" class="directional-pad-buttons">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="confirmation-buttons">
+					<div id="b-button" class="confirmation-buttons">B
+					</div>
+					<div id="a-button" class="confirmation-buttons">A
+					</div>
+				</div>
+			</div>
+			<div id="menu-buttons">
+				<div id="select-button" class="menu-buttons">SELECT
+				</div>
+				<div id="start-button" class="menu-buttons">START
+				</div>
+			</div>
+		</div>
+		<div id="notification-display" class="side-displays">
+			<div id="pet-name-notification-window" class="windows">
+				<h5>What would you like to name your pet?</h5>
+				<form id="pet-name-notification-form">
+					<input type="text" id="pet-name-input" placeholder="Pikachu" value="Pikachu">
+					<button type="submit" id="pet-name-submit">Create New Pet</button>
+				</form>
+			</div>
+			<div id="game-window" class="windows">
+				<h3 id="game-title">Grass - Water - Fire</h3>
+				<h5>Choose one:</h5>
+				<div id="grass-option" class="game-options">
+					<div id="grass-sprite" class="game-sprites"></div>
+					<h5>Grass</h5>
+				</div>
+				<div id="water-option" class="game-options">							<div id="water-sprite" class="game-sprites"></div>
+					<h5>Water</h5>
+				</div>
+				<div id="fire-option" class="game-options">
+					<div id="fire-sprite" class="game-sprites"></div>
+					<h5>Fire</h5>
+				</div>
+			</div>
+			<div id="game-results-window" class="windows">
+				<h3 id="results-title">Results</h3>
+				<div id="user-choice" class="choices">
+					<h5>You chose:</h5>
+					<div id="user-choice-sprite" class="game-sprites">
+					</div>
+					<h5 id="user-choice-label"></h5>
+				</div>
+				<div id="pet-choice" class="choices">
+					<h5>Your pet chose:</h5>
+					<div id="pet-choice-sprite" class="game-sprites">
+					</div>
+					<h5 id="pet-choice-label"></h5>
+				</div>
+				<div id="results-section">
+					<h3 id="results"></h3>
+				</div>
+				<button id="results-button">Play Again</button>
+			</div>
+			<div id="faint-window" class="windows">
+				<h5>Your pet has fainted!</h5>
+				<button id="try-again-button">Try Again</button>
 			</div>
 		</div>
 	</div>
-
-
 <script type="text/javascript" src="js/app.js"></script>
 </body>
 </html>
