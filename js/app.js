@@ -9,6 +9,8 @@ let petChoice = 0;
 let foodThrown = 0;
 let lightsOn = true;
 let gamesPlayed = 0;
+let marginTop = 0;
+let marginRight = 0;
 
 // Classes
 class Pet {
@@ -159,16 +161,13 @@ const calculateFaint = (pet) => {
 
 
 const startPetAnimations = () => {
-	let marginTop = 0;
-	let marginRight = 0;
-
 	const petAnimation = setInterval(function(){
 		if(lightsOn === false || petFaint === true){
 			clearInterval(petAnimation);
 			$("#pet-sprite").removeClass("pikachu-animation-2");
 		} else {
-			let randomNumTop = (Math.floor(Math.random() * 22))-10;
-			let randomNumRight = (Math.floor(Math.random() * 21))-10;
+			const randomNumTop = (Math.floor(Math.random() * 22))-10;
+			const randomNumRight = (Math.floor(Math.random() * 21))-10;
 
 			marginTop += randomNumTop;
 			marginTop = Math.max(-60, marginTop);

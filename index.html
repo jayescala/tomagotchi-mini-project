@@ -81,7 +81,7 @@
 		</div>
 		<div id="notification-display" class="side-displays">
 			<div id="pet-name-notification-window" class="windows">
-				<h5>What would you like to name your pet?</h5>
+				<h5 id="pet-name-message">What would you like to name your pet?</h5>
 				<form id="pet-name-notification-form">
 					<input type="text" id="pet-name-input" placeholder="Pikachu" value="Pikachu">
 					<button type="submit" id="pet-name-submit">Create New Pet</button>
@@ -91,15 +91,15 @@
 				<h3 id="game-title">Grass - Water - Fire</h3>
 				<h5>Choose one:</h5>
 				<div id="grass-option" class="game-options">
-					<div id="grass-sprite" class="game-sprites"></div>
+					<div id="grass-sprite" class="game-option-sprites"></div>
 					<h5>Grass</h5>
 				</div>
 				<div id="water-option" class="game-options">
-					<div id="water-sprite" class="game-sprites"></div>
+					<div id="water-sprite" class="game-option-sprites"></div>
 					<h5>Water</h5>
 				</div>
 				<div id="fire-option" class="game-options">
-					<div id="fire-sprite" class="game-sprites"></div>
+					<div id="fire-sprite" class="game-option-sprites"></div>
 					<h5>Fire</h5>
 				</div>
 			</div>
@@ -107,13 +107,13 @@
 				<h3 id="results-title">Results</h3>
 				<div id="user-choice" class="choices">
 					<h5>You chose:</h5>
-					<div id="user-choice-sprite" class="game-sprites">
+					<div id="user-choice-sprite" class="game-choice-sprites">
 					</div>
 					<h5 id="user-choice-label"></h5>
 				</div>
 				<div id="pet-choice" class="choices">
 					<h5>Your pet chose:</h5>
-					<div id="pet-choice-sprite" class="game-sprites">
+					<div id="pet-choice-sprite" class="game-choice-sprites">
 					</div>
 					<h5 id="pet-choice-label"></h5>
 				</div>
@@ -123,7 +123,7 @@
 				<button id="results-button">Play Again</button>
 			</div>
 			<div id="faint-window" class="windows">
-				<h5>Your pet has fainted!</h5>
+				<h5 id="faint-message">Your pet has fainted!</h5>
 				<button id="try-again-button">Try Again</button>
 			</div>
 		</div>
