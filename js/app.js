@@ -224,6 +224,7 @@ const turnOffLights = () => {
 	$("#display").addClass("dark-background");
 	$("#pet-sprite").addClass("fade");
 	lightsOn = false;
+	exitGame();
 	$("#a-button").off("click");
 	$("#up-button").off("click");
 	$("#right-button").off("click");
@@ -250,7 +251,6 @@ const startGame = () => {
 	$("#game-window").show();
 	$("#right-button").off("click");
 	$("#left-button").on("click", exitGame);
-	$("#start-button").off("click");
 
 }
 
@@ -260,7 +260,6 @@ const exitGame = () => {
 	$("#game-results-window").hide();
 	$("#left-button").off("click");
 	$("#right-button").on("click", startGame);
-	$("#start-button").on("click", turnOffLights);
 }
 
 
@@ -366,6 +365,7 @@ $("#pet-name-submit").on("click", (event) => {
 	$("#pet-name-notification-window").hide();
 	$("#menu-display").removeClass("transparent");
 	$("#status-window").show();
+	$("#instructions-window").show();
 	setHomeButtons();
 });
 

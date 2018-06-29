@@ -37,6 +37,21 @@
 					</div>
 				</div>
 			</div>
+			<div id="instructions-window" class="windows">
+				<h3 id="instructions-title">Instructions</h3>
+				<div id="instructions-message">
+					<div class="instruction-rule">
+						To Feed - Press Up, then A
+					</div>
+					<div class="instruction-rule">
+						To Sleep - Press Start
+					</div>
+					<div class="instruction-rule">
+						To Play - Press Right
+					</div>
+					<div class="instruction-rule">To Hide - Press Select</div>
+				</div>
+			</div>
 		</div>
 		<div id="case">
 			<div id="screen">
@@ -81,7 +96,7 @@
 		</div>
 		<div id="notification-display" class="side-displays">
 			<div id="pet-name-notification-window" class="windows">
-				<h5 id="pet-name-message">What would you like to name your pet?</h5>
+				<div id="pet-name-message">What would you like to name your pet?</div>
 				<form id="pet-name-notification-form">
 					<input type="text" id="pet-name-input" placeholder="Pikachu" value="Pikachu">
 					<button type="submit" id="pet-name-submit">Create New Pet</button>
@@ -89,33 +104,33 @@
 			</div>
 			<div id="game-window" class="windows">
 				<h3 id="game-title">Grass - Water - Fire</h3>
-				<h5>Choose one:</h5>
+				<div id="game-instructions">Choose one:</div>
 				<div id="grass-option" class="game-options">
 					<div id="grass-sprite" class="game-option-sprites"></div>
-					<h5>Grass</h5>
+					<div>Grass</div>
 				</div>
 				<div id="water-option" class="game-options">
 					<div id="water-sprite" class="game-option-sprites"></div>
-					<h5>Water</h5>
+					<div>Water</div>
 				</div>
 				<div id="fire-option" class="game-options">
 					<div id="fire-sprite" class="game-option-sprites"></div>
-					<h5>Fire</h5>
+					<div>Fire</div>
 				</div>
 			</div>
 			<div id="game-results-window" class="windows">
 				<h3 id="results-title">Results</h3>
 				<div id="user-choice" class="choices">
-					<h5>You chose:</h5>
+					<div>You chose:</div>
 					<div id="user-choice-sprite" class="game-choice-sprites">
 					</div>
-					<h5 id="user-choice-label"></h5>
+					<div id="user-choice-label"></div>
 				</div>
 				<div id="pet-choice" class="choices">
-					<h5>Your pet chose:</h5>
+					<div>Your pet chose:</div>
 					<div id="pet-choice-sprite" class="game-choice-sprites">
 					</div>
-					<h5 id="pet-choice-label"></h5>
+					<div id="pet-choice-label"></div>
 				</div>
 				<div id="results-section">
 					<h3 id="results"></h3>
@@ -123,7 +138,7 @@
 				<button id="results-button">Play Again</button>
 			</div>
 			<div id="faint-window" class="windows">
-				<h5 id="faint-message">Your pet has fainted!</h5>
+				<div id="faint-message">Your pet has fainted!</div>
 				<button id="try-again-button">Try Again</button>
 			</div>
 		</div>
